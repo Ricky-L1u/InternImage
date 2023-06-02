@@ -217,8 +217,8 @@ def main():
                            test_cfg=cfg.get('test_cfg'))
 
     model.init_weights()
-    for params in model.backbone.parameters():
-        params.requires_grad = False
+    # for params in model.backbone.parameters():
+    #     params.requires_grad = False
 
 
     datasets = [build_dataset(cfg.data.train)]
